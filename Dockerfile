@@ -22,7 +22,7 @@ ENV RUN_SCRIPT ~/.bashrc
 # Install additional packages
 RUN apk update && apk upgrade && \
     apk add --no-cache gfortran g++ make git cmake less && \
-    apk add --no-cache python3 doxygen rsync cpio bash bash-completion && \
+    apk add --no-cache python3 python3-dev doxygen rsync cpio bash bash-completion && \
     # pip3 packages
     pip3 install --upgrade pip && \
     pip3 install pytest pytest-xdist pypact
