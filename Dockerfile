@@ -17,6 +17,11 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.license="Apache-2.0" \
       org.label-schema.schema-version="1.0"
 
+# some environment variables for regression testing
+ENV FISPACT_SYSTEM_TESTS_REF alpine_3.6_gfortran_6_xsbinaries
+ENV PYTHONDONTWRITEBYTECODE 1.
+ENV PYTEST_VERBOSE line
+
 ENV RUN_SCRIPT ~/.bashrc
 
 # Install additional packages
